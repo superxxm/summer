@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MTAexam</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	body {
+			background:url('image/background.jpg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+	#content {
+		padding: 10px 0;
+		margin-top: 4%;
+	}
+	#circle {
+		overflow: hidden;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5px;
+		width: 110px;
+		height: 110px;
+		border: 1px solid white;
+		border-radius: 110px;
+	}
+	#circle-1 {
+		overflow: hidden;
+		margin: 3px;
+		width: 102px;
+		height: 102px;
+		border-radius: 102px;
+		background: #fff;
+	}
+	#head_image {
+		width: 102px;
+		height: 102px;
+	}
+	#id_input {
+		color: #fff;
+		font-size: 20px;
+		/* vertical-align: center; */
+	}
+	#triangle {
+		/* vertical-align:center; */
+		margin-top: 15px;
+		width: 120px;
+		height: 80px;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#triangle_left {
+		opacity:0.7;
+		width: 50px;
+		height: 50px;
+		border-top: 1px solid #fff;
+		transform: rotate(50deg);
+		float:left;
+		padding-right:50px;
+	}
+	#triangle_right {
+		opacity:0.7;
+		height: 50px;
+		width: 50px;
+		border-top: 1px solid #fff;
+		transform: rotate(-50deg);
+		float:right;
+		padding-left:50px;
+	}
+	#btn_more {
+		text-align:left;
+		position:relative;
+		bottom:15px;
+		vertical-align:center;
+		color:#fff;
+		overflow:hidden;
+		margin:0;
+		padding: 0;
+	}
+	</style>
+</head>
+<body>
+<div id="content">
+		<div id="circle" class="text-center">
+			<div id="circle-1" class="text-center">
+				<img class="img-responsive" src="image/girlinwoods.jpg" alt="" id="head_image">
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5"><hr></div>
+				<div class="col-md-2">
+					<p id="id_input" class="text-center"><strong>ID:123456789</strong></p>
+				</div>
+				<div class="col-md-5"><hr></div>
+			</div>
+			<div id="triangle">
+				<span id="triangle_left">
+				</span>
+				<span id="btn_more">mo</span>
+				<span id="triangle_right">
+				</span>
+			</div>
+		</div>
+</div>
+	<script src="../jquery/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

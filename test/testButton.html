@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MTAexam</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/css" media="screen">
+		.content {
+			width:200px;
+			text-align:center;
+			margin-right:auto;
+			margin-left:auto;
+		}
+		.sp1 {
+			display:block;
+			width:50px;
+			height:50px;
+			margin-right: 18.5px;
+			border-right: 1px gray solid;
+			float:left;
+			transform-origin: 100% 0;
+			transform: rotate(-45deg);
+		}
+		.sp2 {
+			display: block;
+			float:left;
+		}
+		.sp3 {
+			display:block;
+			width:50px;
+			height:50px;
+			margin-left: 18.5px;
+			border-left: 1px gray solid;
+			float:left;
+			transform-origin: 0 0;
+			transform: rotate(45deg);
+		}
+		#list {
+			display:none;
+		}
+	</style>
+</head>
+<body>
+<a href="#" id="button" onclick="show()">
+	<div class="content">
+		<span class="sp1"></span>
+		<span class="sp2">more</span>
+		<span class="sp3"></span>
+	</div>
+</a>
+
+<!-- <div id="list">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<p class="text-center">数据分析</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6"><p class="text-center">练习模式数据统计</p></div>
+		<div class="col-md-6"><p class="text-center">考试模式数据统计</p></div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			
+		</div>
+		<div class="col-md-6"><p class="text-center">模拟次数：xx</p></div>
+	</div>
+</div> -->
+	<script src="../jquery/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	function show() {
+    		document.getElementById('list').style.display = 'block';
+    	}
+    </script>
+</body>
+</html>

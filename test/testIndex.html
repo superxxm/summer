@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MTAexam</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	body {
+			background:url('image/indexbackground.jpg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+	#content {
+		padding: 10px 0;
+		margin-top: 2%;
+	}
+	#circle {
+		overflow: hidden;
+		/* text-align: center; */
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5px;
+		width: 110px;
+		height: 110px;
+		border: 1px solid white;
+		border-radius: 110px;
+	}
+	#circle-1 {
+		overflow: hidden;
+		margin: 3px;
+		width: 102px;
+		height: 102px;
+		border-radius: 102px;
+		background: #fff;
+	}
+	#head_image {
+		width: 102px;
+		height: 102px;
+	}
+	#id_input {
+		color: #fff;
+		font-size: 20px;
+		/* vertical-align: center; */
+	}
+	#triangle:hover {
+		opacity:1;
+	}
+	#triangle {
+		opacity: 0.7;
+		width: 170px;
+		/* text-align: center; */
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#triangle_left {
+		display:block;
+		/* opacity:0.7; */
+		width: 50px;
+		height: 50px;
+		border-right:1px solid #fff;
+		transform-origin: 100% 0;
+		transform: rotate(-45deg);
+		float:left;
+		margin-right:18.5px;
+	}
+	#triangle_right {
+		display: block;
+		/* opacity:0.7; */
+		height: 50px;
+		width: 50px;
+		border-left: 1px solid #fff;
+		transform-origin: 0 0;
+		transform: rotate(45deg);
+		float:left;
+		margin-left:18.5px;
+	}
+	#btn_more {
+		text-align:center;
+		color:#fff;
+		display:block;
+		float:left;
+	}
+	#list {
+		background-color: #ccc;
+		color: #000;
+		display: none;
+	}
+	#mid {
+		margin-top:6%;
+		margin-bottom: 10%;
+		color: #fff;
+	}
+	.mode {
+		color: #fff;
+	}
+	a:hover {
+		text-decoration:none;
+	}
+	#mid-circle {
+		height: 60px;
+		width: 60px;
+		border-radius: 60px;
+		background: #fff;
+		margin-right:auto;
+		margin-left:auto;
+		color: #000;
+		font-size:40px;
+	}
+	#mid-circle:hover {
+		text-decoration: none;
+	}
+	</style>
+</head>
+<body>
+<div id="content">
+		<div id="circle" class="text-center">
+			<div id="circle-1" class="text-center">
+				<img class="img-responsive" src="image/girlinwoods.jpg" alt="" id="head_image">
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5"><hr></div>
+				<div class="col-md-2">
+					<p id="id_input" class="text-center"><strong>ID:123456789</strong></p>
+				</div>
+				<div class="col-md-5"><hr></div>
+			</div>
+			<a href="#" id="button" onclick="show()">
+				<div id="triangle">
+					<span id="triangle_left">
+					</span>
+					<span id="btn_more">more</span>
+					<span id="triangle_right">
+					</span>					
+				</div>
+			</a>
+		</div>
+</div>
+
+<div class="container" id="list">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<p class="text-center">数据分析</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6"><p class="text-center">练习模式数据统计</p></div>
+		<div class="col-md-6"><p class="text-center">考试模式数据统计</p></div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			
+		</div>
+		<div class="col-md-6"><p class="text-center">模拟次数：xx</p></div>
+	</div>
+</div>
+
+
+<div class="container" id="mid">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<h2 class="text-center">MTA考试练习系统</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<a href="#"><h2 class="text-center mode">练习模式</h2></a>
+		</div>
+		<div class="col-md-4 text-center">
+			<p id="mid-circle">
+			&
+			</p>
+		</div>
+		<div class="col-md-4">
+			<a href="#"><h2 class="text-center mode">考试模式</h2></a>
+		</div>
+	</div>
+</div>
+
+
+
+	<script src="../jquery/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	// var button = document.getElementById('button');
+    	// var list = document.getElementById('list');
+    	// button.onclick() = function() {
+    	// 	list.style.display = 'block';
+    	// }
+    	function show() {
+    		document.getElementById('list').style.display = 'block';
+    		document.getElementById('mid').style.display = 'none';
+    	}
+    </script>
+</body>
+</html>
